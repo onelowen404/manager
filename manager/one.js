@@ -21,7 +21,7 @@ document.addEventListener("DOMContentLoaded", function(event) {
         }
         return files_;
     };
-    var accounts = getAccounts('/var/bot/cookies')
+    var accounts = getAccounts('./cookies')
     var table = document.getElementById('table')
     accounts.forEach(function (account) {
         if(account != 'cookie'){

@@ -1,0 +1,10 @@
+[Desktop Entry]
+Version=1.0
+Type=Application
+Name=Account manager
+Comment=
+Exec=sudo bash /var/bot/manager/start.sh
+Icon=
+Path=
+Terminal=false
+StartupNotify=false
