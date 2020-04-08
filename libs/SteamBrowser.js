@@ -41,7 +41,7 @@ class SteamBrowser{
     async openAccount(login) {
         this.headless = false
         await this.openBrowser()
-        var cookiesFile = await readFile(`./cookies/${login}.json`, 'utf8')
+        var cookiesFile = await readFile(`/var/bot/manager/cookies/${login}.json`, 'utf8')
         var cookie = await JSON.parse(cookiesFile)
         await this.page.setCookie(...cookie)
         await this.page.goto(this.links.steam)
